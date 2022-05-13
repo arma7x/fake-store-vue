@@ -1,12 +1,10 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+  <h1 class="mt-2">Fake Store</h1>
   <router-view/>
 </template>
 
 <style lang="scss">
+@import "../node_modules/bootstrap/scss/bootstrap";
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
