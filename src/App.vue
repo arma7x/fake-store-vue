@@ -37,6 +37,10 @@ export default defineComponent({
 
 <style lang="scss">
 @import "../node_modules/bootstrap/scss/bootstrap";
+body {
+  background-color: #EEEEEB;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
