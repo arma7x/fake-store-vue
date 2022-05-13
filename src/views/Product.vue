@@ -4,13 +4,14 @@
   </div>
 </template>
 
+<script lang="ts">
 import { defineComponent } from 'vue';
 import { FakeStore } from '../api';
 
 export default defineComponent({
   // type inference enabled
   props: {
-    id: any
+    id: String
   },
   data() {
     return {
@@ -18,13 +19,13 @@ export default defineComponent({
     }
   },
   mounted() {
-    console.log('Product Mounted');
-    //FakeStore.getProduct()
-    //.then((product) => {
-      //console.log(product);
-    //})
-    //.catch((err) => {
-      //console.error(err);
-    //});
+    FakeStore.getProduct(this.id)
+    .then((product) => {
+      console.log(product);
+    })
+    .catch((err) => {
+      console.error(err);
+    });
   }
 })
+</script>
