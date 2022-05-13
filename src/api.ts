@@ -4,7 +4,7 @@ export class FakeStore {
     return fetch('https://fakestoreapi.com/products').then(res=>res.json());
   }
 
-  static getProduct(id: string|number): Promise<any> {
+  static getProduct(id: string): Promise<any> {
     return fetch(`https://fakestoreapi.com/products/${id}`).then(res=>res.json());
   }
 
